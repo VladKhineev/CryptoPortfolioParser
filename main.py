@@ -107,8 +107,6 @@ try:
     while True:
         dataNow = datetime.now().date()
         dataNow = f"{dataNow:%d.%m.%Y}"
-        dataNow.date()
-        print(type(dataNow))
 
         parser('bitcoin', wbBitcoin, wsBitcoin, numberBitcoin, fileBitcoin, 'https://investfunds.ru/indexes/9021/')
         parser('ethereum', wbEthereum, wsEthereum, numberEthereum, fileEthereum, 'https://investfunds.ru/indexes/18539/')
